@@ -1,0 +1,33 @@
+@import 'base/variables';
+
+.bg-b{
+  background: $main-bg;
+}
+
+.s-bg{
+  background: $sub-bg;
+}
+
+.m-auto{
+  margin: 0 auto;
+}
+
+.p-rel{
+  position:relative;
+}
+
+.p-ab{
+  position:absolute;
+}
+
+.d-block{
+  display:block;
+}
+
+.t-cen{
+  text-align:center;
+}
+
+.m-tc{
+  color:$main-text-color;
+}

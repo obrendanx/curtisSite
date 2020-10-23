@@ -1,9 +1,46 @@
 @import 'base/variables';
+@import 'classes';
 
-body{
-  background: $bg;
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
 }
 
-h1{
-  color: $red;
+body{
+  width:80%;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+
+.wrapper{
+  width:100%;
+}
+
+.main_head{
+  height:50px;
+  width:100%;
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+}
+
+
+//nav style
+.navbar ul{
+  list-style:none;
+}
+
+.navbar li{
+  display:inline-block;
+  margin-left:-4px;
+}
+
+.navbar a{
+  text-decoration:none;
+  height:50px;
+  width:120px;
+  line-height:45px;
+  padding:3px;
+  border-right:solid 2px $main-text-color;
 }
