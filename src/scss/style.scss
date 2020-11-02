@@ -42,3 +42,7 @@ body{
   padding:3px;
   border-right:solid 2px $main-text-color;
 }
+
+.navbar a:hover{
+  color: $tinted-red;
+}
