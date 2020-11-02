@@ -8,19 +8,18 @@
 }
 
 body{
-  width:80%;
-  background-color: #8EC5FC;
-  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-
+  width:75%;
 }
 
 .wrapper{
   width:100%;
+  height:100vh;
 }
 
 .main_head{
-  height:50px;
+  height:5%;
   width:100%;
+  background: $black-tint;
 }
 
 
@@ -36,13 +35,40 @@ body{
 
 .navbar a{
   text-decoration:none;
-  height:50px;
+  height:5%;
   width:120px;
-  line-height:45px;
+  line-height:40px;
   padding:3px;
-  border-right:solid 2px $main-text-color;
+  color: $white;
+  font-size:0.7em;
 }
 
 .navbar a:hover{
-  color: $tinted-red;
+  color: $mid-orange;
+}
+
+//wrapper style
+.sub_wrapper{
+  height:95%;
+  width:100%;
+}
+
+.section_one{
+  background-color: $white;
+  height:50%;
+  width:100%;
+}
+
+.section_two{
+  background-color: $black-tint;
+  height:50%;
+  width:100%;
+}
+
+
+//responsive styles
+@media only screen and (max-width: 1200px){
+  body{
+    width:100%;
+  }
 }
