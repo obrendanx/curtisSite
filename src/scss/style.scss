@@ -81,6 +81,7 @@ body{
   height:100%;
   position:relative;
   float:left;
+  color: $white;
 }
 
 .st-arttwo img{
@@ -94,6 +95,71 @@ body{
   right:0;
 }
 
+.artone-info{
+  width:80%;
+  height:60%;
+  font-size:1.5em;
+  margin:auto;
+  margin-top:25%;
+}
+
+//vinyl Record
+.vinyl-circle-one{
+  position:absolute;
+  height:80%;
+  width:80%;
+  background:$black-tint;
+  border-radius:50%;
+  margin-left:5%;
+  margin-top:5%;
+  box-shadow: 2px 2px 0px 45px rgba(0,0,0,0.75);
+}
+
+.vinyl-inner{
+  position:absolute;
+  height:55%;
+  width:55%;
+  background:$mid-orange;
+  border-radius:50%;
+  margin-left:25%;
+  margin-top:25%;
+  z-index:1;
+}
+
+.vinyl-record{
+  padding-left:2.5%;
+  padding-top:2.5%;
+}
+
+.vinyl-sec-one, .vinyl-sec-three{
+  position:absolute;
+  width:100%;
+  height:40%;
+  perspective: 1px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background:blue;
+}
+
+.vinyl-sec-two, .vinyl-sec-four{
+  position:absolute;
+  width:40%;
+  height:100%;
+  perspective: 1px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background:pink;
+}
+
+.vinyl-sec-four{
+  right:0;
+  transform: rotatey(180deg);
+}
+
+.vinyl-sec-three{
+  bottom:0;
+  transform: rotatex(180deg);
+}
 
 
 //responsive styles
