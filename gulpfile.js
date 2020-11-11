@@ -12,6 +12,9 @@ var babelcore = require('babel-core');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 var uglify = require('gulp-uglify');
+var browserSync = require('browser-sync').create();
+var reload = browserSync.reload;
+var runSequence = require('run-sequence');
 
 var styleSRC = './src/scss/style.scss';
 var styleDIST = './dist/css/';
@@ -23,6 +26,22 @@ var jsDIST = './dist/js/';
 var jsWatch = './src/js/**/*.js';
 var jsFILES = [jsSRC];
 
+var htmlWatch = './**/*.html';
+
+gulp.task('browserSync', function(){
+  return browserSync.init({
+    open: false,
+    injectChanges: true,
+    server: {
+      baseDir: "./"
+    }
+    //proxy: 'http://sitename.dev',
+    //https: {
+    //  key: '',
+    //  cert: ''
+    //}
+  });
+});
 
 gulp.task('style', function(){
   return gulp.src( styleSRC )
@@ -36,7 +55,8 @@ gulp.task('style', function(){
       .pipe( rename( { suffix: '.min' } ) )
       .pipe( sourcemaps.write('./') )
       .pipe(changed(styleDIST))
-      .pipe( gulp.dest( styleDIST ) );
+      .pipe( gulp.dest( styleDIST ) )
+      .pipe( browserSync.stream() );
 });
 
 gulp.task('js',  async function(){
@@ -53,12 +73,13 @@ gulp.task('js',  async function(){
     .pipe( uglify() )
     .pipe( sourcemaps.write( './' ) )
     .pipe( gulp.dest( jsDIST ) )
+    .pipe( browserSync.stream() );
   });
 });
 
 gulp.task('default', gulp.parallel('style', 'js') );
 
-gulp.task('watch', function(){
-  return gulp.watch( styleWatch, gulp.series('style'));
-  return gulp.watch( jsWatch, gulp.series('js'));
-});
+gulp.task('watch', gulp.parallel('default', 'browserSync', function(){
+  return gulp.watch( styleWatch, gulp.series('style')).on("change", browserSync.reload);
+  return gulp.watch( jsWatch, gulp.series('js')).on("change", browserSync.reload);
+}));

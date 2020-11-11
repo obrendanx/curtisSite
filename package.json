@@ -20,6 +20,7 @@
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "babelify": "^10.0.0",
+    "browser-sync": "^2.26.13",
     "browserify": "^17.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
@@ -41,6 +42,7 @@
     ]
   },
   "dependencies": {
-    "@babel/core": "^7.12.3"
+    "@babel/core": "^7.12.3",
+    "run-sequence": "^2.2.1"
   }
 }
