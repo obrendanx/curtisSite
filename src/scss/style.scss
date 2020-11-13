@@ -116,18 +116,23 @@ body{
 
 .vinyl-inner{
   position:absolute;
-  height:55%;
-  width:55%;
+  height:40%;
+  width:40%;
   background:$mid-orange;
   border-radius:50%;
-  margin-left:22.5%;
-  margin-top:22.5%;
+  margin-left:30%;
+  margin-top:30%;
   z-index:1;
+  box-shadow: 0 0 0 3px $black-text;
 }
 
 .vinyl-record{
   display:block;
   width:50%;
+  display: flex; // make us of Flexbox
+  align-items: center; // does vertically center the desired content
+  justify-content: center; // horizontally centers single line items
+  text-align: center;
 }
 
 .segment {
@@ -139,7 +144,6 @@ body{
   height: 50%;
   transform-origin: 0% 100%;
   box-sizing: border-box;
-  border:solid 2px $white;
 }
 .seg {
   position: absolute;
@@ -147,7 +151,20 @@ body{
   width: 200%;
   height: 200%;
   border-radius: 50%;
+  transition:1s ease-in-out;
+  color:$white;
 }
+.segone span{
+   transform-origin: bottom center;
+   position:relative;
+}
+
+.seg h1{
+  transform: rotate(60deg);
+  margin-left:45%;
+  margin-top:27.5%;
+}
+
 .segment:nth-child(1) {
   transform: rotate(-60deg) skewY(30deg) scale(1.2);
 }
@@ -167,6 +184,28 @@ body{
   transform: skewY(-30deg); /* unskew slice contents */
 }
 
+.segone{
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+}
+.segone:hover{
+  background:$black-tint;
+}
+.segtwo{
+  background-color: #a40606;
+  background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+}
+.segtwo:hover{
+  background:$black-tint;
+}
+.segthree{
+  background-color: #7f5a83;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+}
+
+.segthree:hover{
+  background:$black-tint;
+}
 
 //responsive styles
 @media only screen and (max-width: 1200px){
