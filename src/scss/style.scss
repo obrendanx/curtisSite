@@ -19,7 +19,7 @@ body{
 .main_head{
   height:50px;
   width:100%;
-  background: $black-tint;
+  background: $white;
 }
 
 
@@ -39,8 +39,11 @@ body{
   width:110px;
   line-height:50px;
   padding:3px;
-  color: $white;
+  color: $black-text;
   font-size:0.7em;
+  font-family: SeoulNamsan CL;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .navbar a:hover{
@@ -101,6 +104,29 @@ body{
   font-size:1.5em;
   margin:auto;
   margin-top:25%;
+  font-family: Seravek;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.artone-info h2{
+  margin-bottom:3%;
+  text-transform:uppercase;
+}
+
+.artone-info p{
+  font-size:0.8em;
+}
+
+.con-btn{
+  border:none;
+  height:50px;
+  width:125px;
+  border-radius:50px;
+  margin-top:4%;
+  background:$mid-orange;
+  color:$white;
+  text-transform:uppercase;
 }
 
 //vinyl Record
@@ -126,6 +152,15 @@ body{
   box-shadow: 0 0 0 3px $black-text;
 }
 
+.inner-circle{
+  height:8%;
+  width:8%;
+  border-radius:50%;
+  background:$white;
+  margin-left:45%;
+  margin-top:45%;
+}
+
 .vinyl-record{
   display:block;
   width:50%;
@@ -144,6 +179,7 @@ body{
   height: 50%;
   transform-origin: 0% 100%;
   box-sizing: border-box;
+  border:solid 1px $white;
 }
 .seg {
   position: absolute;
@@ -163,6 +199,11 @@ body{
   transform: rotate(60deg);
   margin-left:45%;
   margin-top:27.5%;
+  font-family: SeoulNamsan CL;
+  font-style: normal;
+  font-weight: normal;
+  text-transform:uppercase;
+  font-size:1em;
 }
 
 .segment:nth-child(1) {
@@ -185,26 +226,23 @@ body{
 }
 
 .segone{
-  background-color: #0cbaba;
-  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  background-color: $black-tint;
 }
 .segone:hover{
-  background:$black-tint;
+  background:$mid-orange;
 }
 .segtwo{
-  background-color: #a40606;
-  background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+  background-color: $black-tint;
 }
 .segtwo:hover{
-  background:$black-tint;
+  background:$mid-orange;
 }
 .segthree{
-  background-color: #7f5a83;
-  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+  background-color: $black-tint;
 }
 
 .segthree:hover{
-  background:$black-tint;
+  background:$mid-orange;
 }
 
 //responsive styles
