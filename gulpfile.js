@@ -26,7 +26,8 @@ var jsDIST = './dist/js/';
 var jsWatch = './src/js/**/*.js';
 var jsFILES = [jsSRC];
 
-var htmlWatch = './**/*.html';
+var htmlWatch = '**/*.html';
+var phpWatch = '**/*.php';
 
 gulp.task('browserSync', function(){
   return browserSync.init({
@@ -82,4 +83,5 @@ gulp.task('default', gulp.parallel('style', 'js') );
 gulp.task('watch', gulp.parallel('default', 'browserSync', function(){
   return gulp.watch( styleWatch, gulp.series('style')).on("change", browserSync.reload);
   return gulp.watch( jsWatch, gulp.series('js')).on("change", browserSync.reload);
+  return gulp.watch( htmlWatch ).on("change", browserSync.reload);
 }));
