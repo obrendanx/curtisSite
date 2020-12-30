@@ -132,12 +132,13 @@ body{
 //vinyl Record
 .vinyl-circle-one{
   position:absolute;
-  height:25em;
-  width:25em;
+  height:20em;
+  width:20em;
   background:$black-tint;
   border-radius:50%;
   overflow:hidden;
   margin:auto;
+  box-shadow: -2px 1px 4px 3px rgba(0,0,0,0.42);
 }
 
 .vinyl-inner{
@@ -243,6 +244,24 @@ body{
 
 .segthree:hover{
   background:$mid-orange;
+}
+
+.vinyl-info h1{
+  color:$black-text;
+  font-size:3em;
+  padding-bottom:5%;
+}
+
+.vinyl-info p{
+  color:$mid-orange;
+  font-size:1.5em;
+}
+
+.v-info{
+  height:40%;
+  width:80%;
+  margin:auto;
+  margin-top:30%;
 }
 
 //responsive styles
