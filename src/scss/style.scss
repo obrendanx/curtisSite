@@ -103,7 +103,7 @@ body{
   height:70%;
   font-size:1.5em;
   margin:auto;
-  margin-top:15%;
+  margin-top:30%;
   font-family: Seravek;
   font-style: normal;
   font-weight: bold;
@@ -275,5 +275,46 @@ body{
 @media only screen and (max-width: 1200px){
   body{
     width:100%;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .art{
+    width:100%;
+  }
+
+  .arttwo-img{
+    width:100%;
+    height:100%;
+    margin:0;
+  }
+
+  .st-arttwo img{
+    height:100%;
+    width:100%;
+  }
+
+  .imgbs{
+    box-shadow:none;
+  }
+
+  .artone-info h2{
+    height:10%;
+    font-size:7vw;
+    padding:3px;
+  }
+
+  .artone-info p{
+    height:75%;
+    font-size:5.75vw;
+    padding:3px;
+  }
+
+  .con-btn{
+    height:15%;
+  }
+
+  .st-artone{
+    background:#09203f;
   }
 }
