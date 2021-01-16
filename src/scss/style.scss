@@ -90,7 +90,7 @@ body{
 .st-arttwo img{
   position:absolute;
   height:auto;
-  width:50%;
+  width:70%;
   margin:auto;
   top:0;
   bottom:0;
@@ -100,10 +100,10 @@ body{
 
 .artone-info{
   width:80%;
-  height:60%;
+  height:70%;
   font-size:1.5em;
   margin:auto;
-  margin-top:25%;
+  margin-top:15%;
   font-family: Seravek;
   font-style: normal;
   font-weight: bold;
@@ -127,6 +127,13 @@ body{
   background:$mid-orange;
   color:$white;
   text-transform:uppercase;
+}
+
+.arttwo-img{
+  height:90%;
+  width:90%;
+  margin-top:5%;
+  margin-left:5%;
 }
 
 //vinyl Record
