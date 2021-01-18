@@ -103,7 +103,7 @@ body{
   height:70%;
   font-size:1.5em;
   margin:auto;
-  margin-top:30%;
+  margin-top:15%;
   font-family: Seravek;
   font-style: normal;
   font-weight: bold;
@@ -305,8 +305,8 @@ body{
   }
 
   .artone-info p{
-    height:75%;
-    font-size:5.75vw;
+    height:70%;
+    font-size:2.5vh;
     padding:3px;
   }
 
@@ -316,5 +316,20 @@ body{
 
   .st-artone{
     background:#09203f;
+  }
+
+  .artone-info{
+    margin-top:10%;
+    height:80%;
+  }
+
+  .navbar li{
+    display:block;
+  }
+
+  .nav-menu-btn{
+    height:75px;
+    width:75px;
+    background:black;
   }
 }
