@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.12.3",
+    "@fortawesome/fontawesome-free": "^5.15.2",
     "run-sequence": "^2.2.1"
   }
 }
