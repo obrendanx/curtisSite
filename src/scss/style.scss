@@ -51,6 +51,13 @@ body{
   color: $mid-orange;
 }
 
+.nav-menu-btn{
+  height:50px;
+  width:12.5%;
+  background:black;
+  display:none;
+}
+
 //wrapper style
 .sub_wrapper{
   min-height:1900px;
@@ -381,9 +388,23 @@ body{
     display:block;
   }
 
+  .show{
+    display:block;
+  }
+
+  .hide{
+    display:none;
+  }
+
   .nav-menu-btn{
-    height:75px;
-    width:75px;
-    background:black;
+    display:block;
+  }
+
+  .wrapper{
+    min-height:3125px;
+  }
+
+  .sub_wrapper{
+    min-height:2900px;
   }
 }
