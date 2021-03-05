@@ -1,0 +1,32 @@
+.main_head{
+  height:50px;
+  width:100%;
+  background: $white;
+}
+
+.navbar li{
+  display:inline-block;
+  margin-left:-4px;
+}
+
+.navbar a{
+  text-decoration:none;
+  height:50px;
+  width:110px;
+  line-height:50px;
+  padding:3px;
+  color: $black-text;
+  font-size:0.7em;
+  @include set-font;
+}
+
+.navbar a:hover{
+  color: $mid-orange;
+}
+
+.nav-menu-btn{
+  height:50px;
+  width:12.5%;
+  background:black;
+  display:none;
+}

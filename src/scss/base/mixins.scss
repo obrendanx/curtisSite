@@ -1,0 +1,11 @@
+@mixin set-font($family: 'SeoulNamsan CL', $weight: normal, $style: normal){
+  font-family: $family, 'Arial', 'Helvetica', sans-serif;
+  font-style: $style;
+  font-weight: $weight;
+}
+
+@mixin flex($direction: row){
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: $direction;
+}
