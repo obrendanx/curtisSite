@@ -23,6 +23,20 @@ body{
 }
 
 @media only screen and (max-width: 550px){
+  .section_one{
+    height:1000px;
+    @include flex(column);
+  }
+
+  .section_two{
+    height:1000px;
+    @include flex(column);
+  }
+
+  .v-info{
+    padding-bottom:15%;
+  }
+
   .art{
     width:100%;
   }

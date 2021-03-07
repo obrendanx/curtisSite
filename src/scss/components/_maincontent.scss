@@ -62,7 +62,7 @@
   height:40%;
   width:80%;
   margin:auto;
-  margin-top:30%;
+  padding-top:15%;
 }
 
 //section-two styles
@@ -121,10 +121,28 @@
 
 //3rd article styles
 
-.home-art{
+article.home-art{
   min-height:300px;
-  background:pink;
+  background:$white;
+  padding:20px;
+  h2{
+    @include set-font('SeoulNamsan CL',bold,normal);
+    font-size:2.5em;
+    margin-bottom:5px;
+  }
+  h3{
+    @include set-font('SeoulNamsan CL',bold,normal);
+    font-size:2em;
+    margin-bottom:5px;
+    color:$mid-orange;
+  }
+  p{
+    @include set-font;
+    font-size:1.5em;
+  }
 }
+
+
 
 // Vinyl Record Early Design that was removed //
 
