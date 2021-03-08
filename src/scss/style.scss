@@ -13,6 +13,12 @@
 
 body{
   width:75%;
+  .wrapper{
+    position:relative;
+    width:100%;
+    min-height:2125px;
+    padding-bottom:175px;
+  }
 }
 
 //responsive styles
