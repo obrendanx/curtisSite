@@ -2,6 +2,7 @@
   height:50px;
   width:100%;
   background: $white;
+  transition: height 1s linear 0s;
 }
 
 .navbar li{
@@ -24,9 +25,26 @@
   color: $mid-orange;
 }
 
-.nav-menu-btn{
+.navmenubtn{
+  background: url('../../images/menu-btn.png');
+  background-size:contain;
+  transition: transform 1s linear 0s;
+}
+
+.rotatecss{
+  background: url('../../images/menu-btn-change.png');
+  background-size:contain;
+  transform:rotate(180deg);
+  transition: transform 1s linear 0s;
+}
+
+.mnubtn{
   height:50px;
   width:12.5%;
-  background:black;
   display:none;
+}
+
+.achange{
+  color:$white !important;
+  padding-left:5%;
 }

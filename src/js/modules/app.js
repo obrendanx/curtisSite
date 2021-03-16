@@ -1,9 +1,4 @@
-class App{
-
-  constructor(){
-    console.log( 'App Initialized' );
-  }
-
-}
-
-export default App;
+function rotateBtn() {
+  var navbtn = Document.getElementById("navbtn");
+  navbtn.classList.add("mystyle");
+};
